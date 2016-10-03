@@ -18,7 +18,7 @@
                 if (Array.isArray(obj)) {
                     for (i = 0, len = obj.length; i < len; i++) {
                         buildParams(
-                            prefix + '[' + (typeof obj[i] === 'object' && obj[i] ? i : '') + ']',
+                            prefix + '[]',
                             obj[i]
                         );
                     }
