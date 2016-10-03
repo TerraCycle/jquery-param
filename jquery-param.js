@@ -20,7 +20,7 @@
                             if (rbracket.test(prefix)) {
                                 add(prefix, obj[i]);
                             } else {
-                                buildParams(prefix + '[' + (typeof obj[i] === 'object' ? i : '') + ']', obj[i]);
+                                buildParams(prefix + '[]', obj[i]);
                             }
                         }
                     } else if (obj && String(obj) === '[object Object]') {
@@ -56,4 +56,3 @@
     }
 
 }(this));
-
